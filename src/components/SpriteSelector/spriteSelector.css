@@ -1,0 +1,45 @@
+.selector__item {
+  cursor: pointer;
+  transition: 1s;
+  width: 32%;
+  height: 40%;
+  border-radius: 15px;
+  list-style: none;
+}
+
+.selector__item_small {
+  width: 14%;
+  height: 18%;
+}
+
+.selector__item_big {
+  width: 100%;
+  height: 130%;
+  background-color: white;
+}
+
+.selector__item:hover {
+  transition: 1s;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-selector__reset {
+  width: 95%;
+  height: 5%;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 200%;
+  background-color: #222222;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+  padding: 0;
+}
+
+.bg-selector__reset:hover {
+  background-color: #555555;
+  transition: 1s;
+}

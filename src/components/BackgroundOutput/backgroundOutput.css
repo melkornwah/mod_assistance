@@ -1,0 +1,27 @@
+.background-output {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+}
+
+.background-output__field {
+  width: 75%;
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+  background-color: #201c1c;
+  border: 1px solid white;
+  border-radius: 15px;
+  color: #43c9b0;
+}
+
+.background-output__name {
+  margin: 0;
+  color: white;
+}
+
+.background-output__text {
+  margin: 0;
+}
