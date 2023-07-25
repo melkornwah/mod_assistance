@@ -8,11 +8,11 @@ const AudioOutput = (props) => {
 
   const getAudioCode = () =>{
     if (channel === "ambience") {
-      return `ambience ${sound}`;
+      return `ambience ambience_${sound}`;
     }
 
     if (channel === "sfx") {
-      return `sound ${sound}`;
+      return `sound sfx_${sound}`;
     }
 
     if (channel === "music") {
