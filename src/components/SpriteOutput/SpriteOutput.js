@@ -3,7 +3,8 @@ import "./spriteOutput.css";
 
 const SpriteOutput = (props) => {
   const { currentSprite } = props;
-  const { char,
+  const {
+    char,
     body,
     clothes,
     emo,
@@ -15,15 +16,15 @@ const SpriteOutput = (props) => {
     const spriteCode = `blpi_${char} ${body.slice(-1)} ${clothes} ${emo}`;
 
     if (isFar) {
-      if (acc) {
-        return `${spriteCode} ${acc} far`
+      if (char === "sk") {
+        return `${spriteCode} glasses far`
       }
 
       return `${spriteCode} far`
     }
 
-    if (acc) {
-      return `${spriteCode} ${acc} normal`
+    if (char === "sk") {
+      return `${spriteCode} glasses normal`
     }
 
     return `${spriteCode} normal`
