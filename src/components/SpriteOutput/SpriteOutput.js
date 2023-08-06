@@ -8,7 +8,6 @@ const SpriteOutput = (props) => {
     body,
     clothes,
     emo,
-    acc,
     hasFar,
   } = currentSprite;
 

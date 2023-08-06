@@ -5,7 +5,6 @@ import BackgroundOutput from "../BackgroundOutput/BackgroundOutput";
 
 const BackgroundSelectorWrapper = (props) => {
   const {
-    resetAssetSegment,
     currentBackground,
     setCurrentBackground,
     resetBackground,

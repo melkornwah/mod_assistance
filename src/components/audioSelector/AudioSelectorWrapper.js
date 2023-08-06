@@ -1,7 +1,8 @@
-import React, { memo, useState } from "react";
+import React, { memo, useEffect, useState } from "react";
 import AudioSelector from "./AudioSelector";
-import "./audioSelectorWrapper.css";
 import AudioOutput from "../AudioOutput/AudioOutput";
+import audioAssets from "../../vendor/audioAssets/audioAssets";
+import "./audioSelectorWrapper.css";
 
 const AudioSelectorWrapper = () => {
   const [selectedChannel, setSelectedChannel] = useState("");
@@ -10,6 +11,15 @@ const AudioSelectorWrapper = () => {
     sound: "",
     isSelected: false,
   });
+  const [selectedAudioPath, setSelectedAudioPath] = useState("");
+
+  useEffect(() => {
+    const { channel, sound, isSelected } = currentAudio;
+
+    if (isSelected) {
+      setSelectedAudioPath(audioAssets[channel][sound]);
+    }
+  }, [currentAudio]);
 
   return(
     <div className="audio-selector">
@@ -75,6 +85,7 @@ const AudioSelectorWrapper = () => {
         currentAudio.isSelected && (
           <AudioOutput
             currentAudio={currentAudio}
+            selectedAudioPath={selectedAudioPath}
           />
         )
       }

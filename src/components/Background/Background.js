@@ -17,7 +17,7 @@ const Background = (props) => {
         })
       }}
       className="background"
-      src={imageAsset}
+      src={process.env.PUBLIC_URL + `/${imageAsset}`}
       alt={image}
       loading="lazy"
     />

@@ -1,10 +1,12 @@
-import React, { memo } from "react";
+import React, { memo, useEffect, useRef } from "react";
 import "./audioOutput.css";
 
 const AudioOutput = (props) => {
-  const { currentAudio } = props;
+  const { currentAudio, selectedAudioPath } = props;
 
   const { channel, sound } = currentAudio;
+
+  const audioRef = useRef();
 
   const getAudioCode = () =>{
     if (channel === "ambience") {
@@ -20,6 +22,10 @@ const AudioOutput = (props) => {
     }
   };
 
+  useEffect(() => {
+    audioRef.current.volume = 0.1;
+  }, [])
+
   return(
     <div className="audio-output">
       <div className="audio-output__field">
@@ -30,6 +36,12 @@ const AudioOutput = (props) => {
           play {getAudioCode()}
         </p>
       </div>
+      <audio
+        className="audio-player"
+        src={process.env.PUBLIC_URL + selectedAudioPath}
+        ref={audioRef}
+        controls
+      />
     </div>
   );
 };

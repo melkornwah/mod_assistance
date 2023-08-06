@@ -35,18 +35,18 @@ const Sprite = (props) => {
       })}
     >
       <div className="sprite__wrapper">
-        <img className="sprite__image" src={characterAssets.body} alt="body" loading="lazy" />
+        <img className="sprite__image" src={process.env.PUBLIC_URL + `/${characterAssets.body}`} alt="body" loading="lazy" />
         {
           characterAssets.clothes &&
-          <img className="sprite__image" src={characterAssets.clothes} alt="clothes" loading="lazy" />
+          <img className="sprite__image" src={process.env.PUBLIC_URL + `/${characterAssets.clothes}`} alt="clothes" loading="lazy" />
         }
         {
           characterAssets.emo &&
-          <img className="sprite__image" src={characterAssets.emo} alt="emo" loading="lazy" />
+          <img className="sprite__image" src={process.env.PUBLIC_URL + `/${characterAssets.emo}`} alt="emo" loading="lazy" />
         }
         {
           characterAssets.acc &&
-          <img className="sprite__image" src={characterAssets.acc} alt="acc" loading="lazy" />
+          <img className="sprite__image" src={process.env.PUBLIC_URL + `/${characterAssets.acc}`} alt="acc" loading="lazy" />
         }
       </div>
     </div>

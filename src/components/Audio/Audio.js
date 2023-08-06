@@ -1,14 +1,8 @@
-import React, { memo, useEffect, useRef } from "react";
+import React, { memo } from "react";
 import "./audio.css";
 
 const Audio = (props) => {
   const {audio, selectedChannel, audioPath, setCurrentAudio} = props;
-
-  const audioRef = useRef();
-
-  useEffect(() => {
-    audioRef.current.volume = 0.1;
-  }, [])
 
   return (
     <div className="audio">
@@ -18,17 +12,13 @@ const Audio = (props) => {
           setCurrentAudio({
             channel: selectedChannel,
             sound: audio,
+            path: audioPath,
             isSelected: true,
           });
         }}
       >
         {audio}
       </p>
-      <audio
-        src={audioPath}
-        ref={audioRef}
-        controls
-      />
     </div>
   )
 };
