@@ -1,7 +1,7 @@
 const characters = [
   {
     text: "АГ",
-    code: "ag",
+    code: "blpi_ag",
   },
   {
     text: "УВ",
@@ -9,19 +9,19 @@ const characters = [
   },
   {
     text: "УС",
-    code: "us",
+    code: "blpi_us",
   },
   {
     text: "МИ",
-    code: "mi",
+    code: "blpi_mi",
   },
   {
     text: "СЛ",
-    code: "sl",
+    code: "blpi_sl",
   },
   {
     text: "ДВ",
-    code: "dv",
+    code: "blpi_dv",
   },
   {
     text: "МТ",
@@ -29,99 +29,95 @@ const characters = [
   },
   {
     text: "УН",
-    code: "un",
+    code: "blpi_un",
   },
   {
     text: "КС",
     code: "cs",
   },
   {
-    text: "ВИ",
-    code: "vi",
-  },
-  {
     text: "ГГ",
-    code: "s",
+    code: "blpi_s",
   },
   {
     text: "НН",
-    code: "nn",
+    code: "blpi_nn",
   },
   {
     text: "КР",
-    code: "kr",
+    code: "blpi_kr",
   },
   {
     text: "ОП",
-    code: "op",
+    code: "blpi_op",
   },
   {
     text: "СТ",
-    code: "st",
+    code: "blpi_st",
   },
   {
     text: "РТ",
-    code: "rt",
+    code: "blpi_rt",
   },
   {
     text: "КТ",
-    code: "kt",
+    code: "blpi_kt",
   },
   {
     text: "ЗТ",
-    code: "zt",
+    code: "blpi_zt",
   },
   {
     text: "ХЗ",
-    code: "hz",
+    code: "blpi_hz",
   },
   {
     text: "ДН",
-    code: "dn",
+    code: "blpi_dn",
   },
   {
     text: "КЛ",
-    code: "kl",
+    code: "blpi_kl",
   },
   {
     text: "ЕВ",
-    code: "ev",
+    code: "blpi_ev",
   },
   {
     text: "ТИ",
-    code: "ti",
+    code: "blpi_ti",
   },
   {
     text: "АН",
-    code: "an",
+    code: "blpi_an",
   },
   {
     text: "АЛ",
-    code: "al",
+    code: "blpi_al",
   },
   {
     text: "АМ",
-    code: "am",
+    code: "blpi_am",
   },
   {
     text: "ВЛ",
-    code: "vl",
+    code: "blpi_vl",
   },
   {
     text: "НД",
-    code: "nd",
+    code: "blpi_nd",
   },
   {
     text: "Г_КОМА",
-    code: "v_koma",
+    code: "blpi_v_koma",
   },
   {
     text: "ВА",
-    code: "v_bus",
+    code: "blpi_v_bus",
   },
   {
     text: "Г_ЛОДКА",
-    code: "v_boat_st",
+    code: "blpi_v_boat_st",
   },
   {
     text: "ТХ",
