@@ -147,7 +147,11 @@ export const textToCode = (text) => {
       }
     });
 
-    formattedText.push(`${replacedChar} '${splittedLine[1]}`);
+    if (splittedLine[1]) {
+      formattedText.push(`${replacedChar} '${splittedLine[1]}`);
+    } else {
+      formattedText.push(splittedLine[0]);
+    }
   });
 
   return formattedText.join('\n');
