@@ -1,5 +1,4 @@
-import React, { memo } from "react";
-import "./spriteOutput.css";
+import React, { memo, useEffect, useState } from "react";
 
 const SpriteOutput = (props) => {
   const { currentSprite } = props;
@@ -11,56 +10,90 @@ const SpriteOutput = (props) => {
     hasFar,
   } = currentSprite;
 
-  const getSpriteCode = (isFar) => {
-    const spriteCode = `blpi_${char} ${body.slice(-1)} ${clothes} ${emo}`;
+  const [spriteCode, setSpriteCode] = useState({
+    far: "",
+    normal: "",
+  });
 
-    if (isFar) {
-      if (char === "sk") {
-        return `${spriteCode} glasses far`
-      }
-
-      return `${spriteCode} far`
-    }
-
-    if (char === "sk") {
-      return `${spriteCode} glasses normal`
-    }
-
-    return `${spriteCode} normal`
+  const getSpriteCode = (code) => {
+    return {
+      far: `show ${code} far`,
+      normal: `show ${code} normal`,
+    };
   };
+
+  const setFormattedSpriteCode = () => {
+    const spriteCode = `blpi_${char} ${body.slice(-1)} ${clothes} ${emo}`;
+    const formattedCode = getSpriteCode(`${spriteCode}${char === "sk" ? " glasses" : ""}`);
+
+    setSpriteCode(formattedCode);
+  };
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(spriteCode);
+  };
+
+  useEffect(() => {
+    setFormattedSpriteCode();
+  }, [currentSprite]);
 
   return(
     <>
       {
         hasFar ? (
-          <div className="sprite-output__container">
-            <div className="sprite-output__field">
-              <p className="sprite-output__distance">
-                Far:
-              </p>
-              <p className="sprite-output__text">
-                show {getSpriteCode(true)}
-              </p>
+          <div className="sprite-output">
+            <div className="code-output">
+              <div className="code-output__field">
+                <p className="code-output__name">
+                  Far:
+                </p>
+                <p className="code-output__text">
+                  {spriteCode.far}
+                </p>
+              </div>
+              <button
+                className="code-output__button"
+                type="button"
+                onClick={copyToClipboard}
+              >
+                Скопировать
+              </button>
             </div>
-            <div className="sprite-output__field">
-              <p className="sprite-output__distance">
-                Normal:
-              </p>
-              <p className="sprite-output__text">
-                show {getSpriteCode()}
-              </p>
+            <div className="code-output">
+              <div className="code-output__field">
+                <p className="code-output__name">
+                  Normal:
+                </p>
+                <p className="code-output__text">
+                  {spriteCode.normal}
+                </p>
+              </div>
+              <button
+                className="code-output__button"
+                type="button"
+                onClick={copyToClipboard}
+              >
+                Скопировать
+              </button>
             </div>
           </div>
         ) : (
-          <div className="sprite-output__container">
-            <div className="sprite-output__field">
-              <p className="sprite-output__distance">
+          <div className="code-output">
+            <div className="code-output__field">
+              <p className="code-output__name">
                 Normal:
               </p>
-              <p className="sprite-output__text">
-                show {getSpriteCode()}
+              <p className="code-output__text">
+                {spriteCode.normal}
               </p>
             </div>
+            <button
+              className="code-output__button"
+              type="button"
+              onClick={copyToClipboard}
+            >
+              Скопировать
+            </button>
           </div>
         )
       }

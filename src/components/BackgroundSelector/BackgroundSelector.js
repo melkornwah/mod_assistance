@@ -1,7 +1,6 @@
 import React, { memo } from "react";
 import imageAssets from "../../vendor/imageAssets/imageAssets";
 import Background from "../Background/Background";
-import "./backgroundSelector.css";
 
 const BackgroundSelector = (props) => {
   const { backgroundSource, backgroundLocation, setCurrentBackground } = props;

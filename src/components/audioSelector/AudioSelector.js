@@ -1,7 +1,6 @@
 import React, { memo } from "react";
 import audioAssets from "../../vendor/audioAssets/audioAssets";
 import Audio from "../Audio/Audio";
-import "./audioSelector.css";
 
 const AudioSelector = (props) => {
   const { selectedChannel, setCurrentAudio } = props;

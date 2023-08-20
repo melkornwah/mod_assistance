@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import imageAssets from "../../vendor/imageAssets/imageAssets";
-import "./background.css";
 
 const Background = (props) => {
   const { source, location, image, setCurrentBackground } = props;

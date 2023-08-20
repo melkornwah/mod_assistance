@@ -125,7 +125,7 @@ const characters = [
   },
 ];
 
-export const textToCode = (text) => {
+export const textToCode = (label, text) => {
   const lines = text.split('\n');
 
   const quotedText = lines.map((line) => `'${line.trim()}'`);
@@ -144,11 +144,13 @@ export const textToCode = (text) => {
     });
 
     if (splittedLine[1]) {
-      formattedText.push(`${replacedChar} '${splittedLine[1]}`);
+      formattedText.push(`  ${replacedChar} '${splittedLine[1]}`);
     } else {
-      formattedText.push(splittedLine[0]);
+      formattedText.push(`  ${splittedLine[0]}`);
     }
   });
 
-  return formattedText.join('\n');
+  const formattedCode = formattedText.join('\n');
+
+  return `label ${label}: \n${formattedCode}`;
 };

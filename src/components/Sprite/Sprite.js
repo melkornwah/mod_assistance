@@ -1,4 +1,3 @@
-import "./sprite.css";
 import React, { memo } from "react";
 import imageAssets from "../../vendor/imageAssets/imageAssets";
 

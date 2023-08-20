@@ -2,7 +2,6 @@ import React, { memo, useEffect, useState } from "react";
 import AudioSelector from "./AudioSelector";
 import AudioOutput from "../AudioOutput/AudioOutput";
 import audioAssets from "../../vendor/audioAssets/audioAssets";
-import "./audioSelectorWrapper.css";
 
 const AudioSelectorWrapper = () => {
   const [selectedChannel, setSelectedChannel] = useState("");

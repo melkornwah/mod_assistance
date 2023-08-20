@@ -1,5 +1,4 @@
 import React, { memo, useState } from "react";
-import "./backgroundSelectorWrapper.css";
 import BackgroundSelector from "./BackgroundSelector";
 import BackgroundOutput from "../BackgroundOutput/BackgroundOutput";
 

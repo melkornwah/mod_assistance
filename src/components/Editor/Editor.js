@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import AssetSelector from "../AssetSelector/AssetSelector";
-import "./editor.css";
 
 const Editor = (props) => {
   const {
@@ -8,6 +7,10 @@ const Editor = (props) => {
     setCurrentCode,
     changeIsModalOpened,
   } = props;
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(currentCode);
+  };
 
   return (
     <div className="editor">
@@ -29,6 +32,13 @@ const Editor = (props) => {
               setCurrentCode(evt.target.value);
             }}
           />
+          <button
+            className="editor__button"
+            type="button"
+            onClick={copyToClipboard}
+          >
+            Скопировать
+          </button>
         </form>
       </div>
       <div className="selector-list">

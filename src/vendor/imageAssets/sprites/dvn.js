@@ -11,6 +11,7 @@ const dvn = {
       },
       emo: {
         guilty: `${normalSpritesPath}/dvn/6/emo/guilty.png`,
+        sad: `${normalSpritesPath}/dvn/6/emo/sad.png`,
         shy: `${normalSpritesPath}/dvn/6/emo/shy.png`,
       },
       acc: {
@@ -38,13 +39,10 @@ const dvn = {
       clothes: {
         coat: `${normalSpritesPath}/dvn/8/clothes/coat.png`,
         pioneer: `${normalSpritesPath}/dvn/8/clothes/pioneer.png`,
-        swim: `${normalSpritesPath}/dvn/8/clothes/swim.png`,
       },
       emo: {
-        cry: `${normalSpritesPath}/dvn/8/emo/cry.png`,
-        sacred: `${normalSpritesPath}/dvn/8/emo/sacred.png`,
-        shocked: `${normalSpritesPath}/dvn/8/emo/shocked.png`,
-        surprise: `${normalSpritesPath}/dvn/8/emo/surprise.png`,
+        angry: `${normalSpritesPath}/dvn/8/emo/angry.png`,
+        rage: `${normalSpritesPath}/dvn/8/emo/rage.png`,
       },
     },
   },

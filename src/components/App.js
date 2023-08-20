@@ -1,7 +1,7 @@
 import { useState, memo } from 'react';
-import './App.css';
 import Editor from './Editor/Editor';
 import TextTransform from './TextTransform/TextTransform';
+import '../style/App.css';
 
 function App() {
   const [isModalOpened, setIsModalOpened] = useState(false);

@@ -1,5 +1,4 @@
 import React, { memo } from "react";
-import "./audio.css";
 
 const Audio = (props) => {
   const {audio, selectedChannel, audioPath, setCurrentAudio} = props;

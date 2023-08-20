@@ -1,15 +1,15 @@
-.audio-selector {
+.asset-selector {
   width: 100%;
   height: 95%;
 }
 
-.audio-selector-wrapper__list {
+.asset-selector__list {
   width: 100%;
   height: 85%;
   padding: 0;
   margin: 15px 0 0 0;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
@@ -17,16 +17,16 @@
   overflow: hidden;
 }
 
-.audio-selector-wrapper__item {
+.asset-selector__item {
   width: 50%;
-  height: 5%;
+  height: fit-content;
   list-style: none;
 }
 
-.audio-selector-wrapper__button {
+.asset-selector__button {
   font-size: 175%;
   width: 50%;
-  height: 100%;
+  height: 25%;
   background-color: #222222;
   outline: none;
   border: 1px solid white;
@@ -37,15 +37,17 @@
   padding: 0;
 }
 
-.audio-selector__button:hover {
+.asset-selector__button:hover {
   background-color: #555555;
   transition: 1s;
 }
 
-.audio-selector__reset {
-  font-size: 175%;
+.reset-selector {
+  margin-top: 1%;
   width: 95%;
   height: 5%;
+  z-index: 1;
+  font-size: 200%;
   background-color: #222222;
   outline: none;
   border: 1px solid white;
@@ -54,10 +56,9 @@
   cursor: pointer;
   transition: 1s;
   padding: 0;
-  margin-top: 15px;
 }
 
-.audio-selector__reset:hover {
+.reset-selector:hover {
   background-color: #555555;
   transition: 1s;
 }

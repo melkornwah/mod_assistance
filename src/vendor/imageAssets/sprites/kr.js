@@ -1,59 +1,6 @@
-import { farSpritesPath } from "../pathConstants";
 import { normalSpritesPath } from "../pathConstants";
 
 const kr = {
-  far: {
-    body_1: {
-      body: `${farSpritesPath}/kr/1/body.png`,
-      clothes: {
-        pioneer: `${farSpritesPath}/kr/1/clothes/pioneer.png`,
-      },
-      emo: {
-        anger: `${farSpritesPath}/kr/1/emo/anger.png`,
-        calm: `${farSpritesPath}/kr/1/emo/calm.png`,
-        confusion: `${farSpritesPath}/kr/1/emo/confusion.png`,
-        fight: `${farSpritesPath}/kr/1/emo/fight.png`,
-        furious: `${farSpritesPath}/kr/1/emo/furious.png`,
-        happy: `${farSpritesPath}/kr/1/emo/happy.png`,
-        misunderstanding: `${farSpritesPath}/kr/1/emo/misunderstanding.png`,
-        normal: `${farSpritesPath}/kr/1/emo/normal.png`,
-        offense: `${farSpritesPath}/kr/1/emo/offense.png`,
-        sad: `${farSpritesPath}/kr/1/emo/sad.png`,
-        sad_smile: `${farSpritesPath}/kr/1/emo/sad_smile.png`,
-        serious: `${farSpritesPath}/kr/1/emo/serious.png`,
-        smile: `${farSpritesPath}/kr/1/emo/smile.png`,
-        spooky: `${farSpritesPath}/kr/1/emo/spooky.png`,
-        tender: `${farSpritesPath}/kr/1/emo/tender.png`,
-      },
-    },
-    body_2: {
-      body: `${farSpritesPath}/kr/2/body.png`,
-      clothes: {
-        pioneer: `${farSpritesPath}/kr/2/clothes/pioneer.png`,
-      },
-      emo: {
-        foxy_smile: `${farSpritesPath}/kr/2/emo/foxy_smile.png`,
-        grin: `${farSpritesPath}/kr/2/emo/grin.png`,
-        normal: `${farSpritesPath}/kr/2/emo/normal.png`,
-        risus: `${farSpritesPath}/kr/2/emo/risus.png`,
-        shy: `${farSpritesPath}/kr/2/emo/shy.png`,
-      },
-    },
-    body_3: {
-      body: `${farSpritesPath}/kr/3/body.png`,
-      clothes: {
-        pioneer: `${farSpritesPath}/kr/3/clothes/pioneer.png`,
-        swim: `${farSpritesPath}/kr/3/clothes/swim.png`,
-      },
-      emo: {
-        cry: `${farSpritesPath}/kr/3/emo/cry.png`,
-        fatigue: `${farSpritesPath}/kr/3/emo/fatigue.png`,
-        fear: `${farSpritesPath}/kr/3/emo/fear.png`,
-        satisfied: `${farSpritesPath}/kr/3/emo/satisfied.png`,
-        surprise: `${farSpritesPath}/kr/3/emo/surprise.png`,
-      },
-    },
-  },
   normal: {
     body_1: {
       body: `${normalSpritesPath}/kr/1/body.png`,

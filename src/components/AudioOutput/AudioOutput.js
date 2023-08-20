@@ -1,40 +1,56 @@
-import React, { memo, useEffect, useRef } from "react";
-import "./audioOutput.css";
+import React, { memo, useEffect, useRef, useState } from "react";
+
+const getAudioCode = (channel, sound) => {
+  if (channel === "music") {
+    return `music_list["${sound}"]`;
+  }
+
+  return `${channel}_${sound}`;
+};
 
 const AudioOutput = (props) => {
   const { currentAudio, selectedAudioPath } = props;
 
   const { channel, sound } = currentAudio;
 
+  const [audioCode, setAudioCode] = useState("");
+
   const audioRef = useRef();
 
-  const getAudioCode = () =>{
-    if (channel === "ambience") {
-      return `ambience ambience_${sound}`;
-    }
+  const getFormattedAudioCode = () =>{
+    const formattedCode = `play ${channel} ${getAudioCode(channel, sound)}`;
 
-    if (channel === "sfx") {
-      return `sound sfx_${sound}`;
-    }
+    setAudioCode(formattedCode);
+  };
 
-    if (channel === "music") {
-      return `music music_list["${sound}"]`;
-    }
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(audioCode);
   };
 
   useEffect(() => {
+    getFormattedAudioCode();
+
     audioRef.current.volume = 0.1;
-  }, [])
+  }, [currentAudio]);
 
   return(
     <div className="audio-output">
-      <div className="audio-output__field">
-        <p className="audio-output__name">
-          Звук:
-        </p>
-        <p className="audio-output__text">
-          play {getAudioCode()}
-        </p>
+      <div className="code-output__container">
+        <div className="code-output__field">
+          <p className="code-output__name">
+            Звук:
+          </p>
+          <p className="code-output__text">
+            {audioCode}
+          </p>
+        </div>
+        <button
+          className="code-output__button"
+          type="button"
+          onClick={copyToClipboard}
+        >
+          Скопировать
+        </button>
       </div>
       <audio
         className="audio-player"

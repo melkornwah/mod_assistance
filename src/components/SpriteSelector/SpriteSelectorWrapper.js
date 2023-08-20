@@ -1,7 +1,6 @@
 import React, { memo, useState } from "react";
 import imageAssets from "../../vendor/imageAssets/imageAssets";
 import SpriteSelector from "./SpriteSelector";
-import "./spriteSelectorWrapper.css";
 import SpriteOutput from "../SpriteOutput/SpriteOutput";
 
 const SpriteSelectorWrapper = (props) => {
@@ -49,9 +48,9 @@ const SpriteSelectorWrapper = (props) => {
   };
 
   return(
-    <div className="selector__wrapper">
-      <button type="button" className="selector__button" onClick={resetSelectedSprite}>Сбросить спрайт</button>
-      <ul className="selector__list">
+    <div className="sprite-selector__wrapper">
+      <button type="button" className="sprite-selector__button" onClick={resetSelectedSprite}>Сбросить спрайт</button>
+      <ul className="sprite-selector__list">
         <SpriteSelector
           setSelectedSprite={setSelectedSprite}
           selectedSprite={selectedSprite}

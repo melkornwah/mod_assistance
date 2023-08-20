@@ -1,6 +1,5 @@
 import React, { memo } from "react";
 import Sprite from "../Sprite/Sprite";
-import "./spriteSelector.css"
 import imageAssets from "../../vendor/imageAssets/imageAssets";
 
 const SpriteSelector = (props) => {
@@ -109,9 +108,9 @@ const SpriteSelector = (props) => {
           <li
             key={`${sprite}`}
             className={
-              `selector__item
-              ${selectedSprite.layer === "char" && "selector__item_small"}
-              ${selectedSprite.layer === "emo" && "selector__item_big"}`
+              `sprite-selector__item
+              ${selectedSprite.layer === "char" && "sprite-selector__item_small"}
+              ${selectedSprite.layer === "emo" && "sprite-selector__item_big"}`
             }
           >
             {

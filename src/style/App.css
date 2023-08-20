@@ -1,0 +1,18 @@
+@import url("codeOutput.css");
+@import url("assets.css");
+@import url("assetSelector.css");
+@import url("backgroundSelector.css");
+@import url("spriteSelector.css");
+@import url("audioSelector.css");
+@import url("editors.css");
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
