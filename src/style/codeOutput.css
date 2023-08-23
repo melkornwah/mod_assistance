@@ -33,6 +33,7 @@
 
 .code-output__container {
   display: flex;
+  justify-content: space-evenly;
   gap: 10px;
   width: 95%;
 }

@@ -11,14 +11,14 @@ const getAudioCode = (channel, sound) => {
 const AudioOutput = (props) => {
   const { currentAudio, selectedAudioPath } = props;
 
-  const { channel, sound } = currentAudio;
+  const { channel, code } = currentAudio;
 
   const [audioCode, setAudioCode] = useState("");
 
   const audioRef = useRef();
 
   const getFormattedAudioCode = () =>{
-    const formattedCode = `play ${channel} ${getAudioCode(channel, sound)}`;
+    const formattedCode = `play ${channel} ${getAudioCode(channel, code)}`;
 
     setAudioCode(formattedCode);
   };
@@ -56,6 +56,7 @@ const AudioOutput = (props) => {
         className="audio-player"
         src={process.env.PUBLIC_URL + selectedAudioPath}
         ref={audioRef}
+        autoPlay
         controls
       />
     </div>

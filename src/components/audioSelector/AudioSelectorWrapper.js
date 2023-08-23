@@ -8,23 +8,24 @@ const AudioSelectorWrapper = () => {
   const [currentAudio, setCurrentAudio] = useState({
     channel: "",
     sound: "",
+    code: "",
     isSelected: false,
   });
   const [selectedAudioPath, setSelectedAudioPath] = useState("");
 
   useEffect(() => {
-    const { channel, sound, isSelected } = currentAudio;
+    const { channel, code, isSelected } = currentAudio;
 
     if (isSelected) {
-      setSelectedAudioPath(audioAssets[channel][sound]);
+      setSelectedAudioPath(audioAssets[channel][code].path);
     }
   }, [currentAudio]);
 
   return(
-    <div className="audio-selector">
+    <div className="asset-selector">
       <button
         type="button"
-        className="audio-selector__reset"
+        className="reset-selector"
         onClick={() => {
           setSelectedChannel("");
           setCurrentAudio({
@@ -38,11 +39,11 @@ const AudioSelectorWrapper = () => {
       </button>
       {
         !selectedChannel ? (
-          <ul className="audio-selector-wrapper__list">
-            <li className="audio-selector-wrapper__item">
+          <ul className="asset-selector-wrapper__list">
+            <li className="asset-selector__item">
               <button
                 type="button"
-                className="audio-selector-wrapper__button"
+                className="asset-selector__button"
                 onClick={() => {
                   setSelectedChannel("ambience")
                 }}
@@ -50,10 +51,10 @@ const AudioSelectorWrapper = () => {
                 Эмбиенты
               </button>
             </li>
-            <li className="audio-selector-wrapper__item">
+            <li className="asset-selector__item">
               <button
                 type="button"
-                className="audio-selector-wrapper__button"
+                className="asset-selector__button"
                 onClick={() => {
                   setSelectedChannel("sfx")
                 }}
@@ -61,10 +62,10 @@ const AudioSelectorWrapper = () => {
                 SFX
               </button>
             </li>
-            <li className="audio-selector-wrapper__item">
+            <li className="asset-selector__item">
               <button
                 type="button"
-                className="audio-selector-wrapper__button"
+                className="asset-selector__button"
                 onClick={() => {
                   setSelectedChannel("music")
                 }}

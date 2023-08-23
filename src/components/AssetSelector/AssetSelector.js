@@ -1,7 +1,7 @@
 import React, { memo, useState } from "react";
 import BackgroundSelectorWrapper from "../BackgroundSelector/BackgroundSelectorWrapper";
 import SpriteSelectorWrapper from "../SpriteSelector/SpriteSelectorWrapper";
-import AudioSelectorWrapper from "../audioSelector/AudioSelectorWrapper";
+import AudioSelectorWrapper from "../AudioSelector/AudioSelectorWrapper";
 
 const AssetSelector = () => {
   const [selectedAsset, setSelectedAsset] = useState("");

@@ -11,11 +11,15 @@ const AudioSelector = (props) => {
     <ul className="audio-selector__list">
       {
         audioList.map((item) => (
-          <li className="audio-selector__item" key={item}>
+          <li
+            className={`audio-selector__item ${selectedChannel === "sfx" ? "audio-selector__item_sfx" : ""}`}
+            key={item}
+          >
             <Audio
-              audio={item}
+              audio={audioAssets[selectedChannel][item].name}
+              audio_code={audioAssets[selectedChannel][item].code}
               selectedChannel={selectedChannel}
-              audioPath={audioAssets[selectedChannel][item]}
+              audioPath={audioAssets[selectedChannel][item].path}
               setCurrentAudio={setCurrentAudio}
             />
           </li>

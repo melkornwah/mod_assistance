@@ -1,20 +1,23 @@
 import React, { memo } from "react";
 
 const Audio = (props) => {
-  const {audio, selectedChannel, audioPath, setCurrentAudio} = props;
+  const {audio, audio_code, selectedChannel, audioPath, setCurrentAudio} = props;
+
+  const handleAudioSelect = () => {
+    setCurrentAudio({
+      channel: selectedChannel,
+      sound: audio,
+      code: audio_code,
+      path: audioPath,
+      isSelected: true,
+    });
+  };
 
   return (
-    <div className="audio">
+    <div className={`audio ${selectedChannel === "sfx" ? "audio_sfx" : ""}`}>
       <p
         className="audio__name"
-        onClick={() => {
-          setCurrentAudio({
-            channel: selectedChannel,
-            sound: audio,
-            path: audioPath,
-            isSelected: true,
-          });
-        }}
+        onClick={handleAudioSelect}
       >
         {audio}
       </p>
