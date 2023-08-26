@@ -14,10 +14,12 @@ const Audio = (props) => {
   };
 
   return (
-    <div className={`audio ${selectedChannel === "sfx" ? "audio_sfx" : ""}`}>
+    <div
+      className={`audio ${selectedChannel === "sfx" ? "audio_sfx" : ""}`}
+      onClick={handleAudioSelect}
+    >
       <p
         className="audio__name"
-        onClick={handleAudioSelect}
       >
         {audio}
       </p>
