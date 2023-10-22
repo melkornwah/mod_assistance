@@ -2,33 +2,33 @@ import { normalSpritesPath } from "../pathConstants";
 
 const mi = {
   normal: {
-    body_4: {
-      body: `${normalSpritesPath}/mi/4/body.png`,
+    body_3: {
+      body: `${normalSpritesPath}/mi/3/body.png`,
       clothes: {
-        coat: `${normalSpritesPath}/mi/4/clothes/coat.png`,
-        pioneer: `${normalSpritesPath}/mi/4/clothes/pioneer.png`,
-        prologue: `${normalSpritesPath}/mi/4/clothes/prologue.png`,
+        coat: `${normalSpritesPath}/mi/3/clothes/coat.png`,
+        pioneer: `${normalSpritesPath}/mi/3/clothes/pioneer.png`,
+        prologue: `${normalSpritesPath}/mi/3/clothes/prologue.png`,
       },
       emo: {
-        angry: `${normalSpritesPath}/mi/4/emo/angry.png`,
-        normal: `${normalSpritesPath}/mi/4/emo/normal.png`,
-        rage: `${normalSpritesPath}/mi/4/emo/rage.png`,
-        serious: `${normalSpritesPath}/mi/4/emo/serious.png`,
-        upset: `${normalSpritesPath}/mi/4/emo/upset.png`,
+        angry: `${normalSpritesPath}/mi/3/emo/angry.png`,
+        normal: `${normalSpritesPath}/mi/3/emo/normal.png`,
+        rage: `${normalSpritesPath}/mi/3/emo/rage.png`,
+        serious: `${normalSpritesPath}/mi/3/emo/serious.png`,
+        upset: `${normalSpritesPath}/mi/3/emo/upset.png`,
       },
     },
-    body_5: {
-      body: `${normalSpritesPath}/mi/5/body.png`,
+    body_2: {
+      body: `${normalSpritesPath}/mi/2/body.png`,
       clothes: {
-        coat: `${normalSpritesPath}/mi/5/clothes/coat.png`,
-        pioneer: `${normalSpritesPath}/mi/5/clothes/pioneer.png`,
+        coat: `${normalSpritesPath}/mi/2/clothes/coat.png`,
+        pioneer: `${normalSpritesPath}/mi/2/clothes/pioneer.png`,
       },
       emo: {
-        cry_smile: `${normalSpritesPath}/mi/5/emo/cry_smile.png`,
-        grin: `${normalSpritesPath}/mi/5/emo/grin.png`,
-        happy: `${normalSpritesPath}/mi/5/emo/happy.png`,
-        sad: `${normalSpritesPath}/mi/5/emo/sad.png`,
-        smile: `${normalSpritesPath}/mi/5/emo/smile.png`,
+        cry_smile: `${normalSpritesPath}/mi/2/emo/cry_smile.png`,
+        grin: `${normalSpritesPath}/mi/2/emo/grin.png`,
+        happy: `${normalSpritesPath}/mi/2/emo/happy.png`,
+        sad: `${normalSpritesPath}/mi/2/emo/sad.png`,
+        smile: `${normalSpritesPath}/mi/2/emo/smile.png`,
       },
     },
   },

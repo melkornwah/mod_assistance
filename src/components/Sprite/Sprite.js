@@ -18,7 +18,7 @@ const Sprite = (props) => {
     body: characterAsset.body,
     clothes: characterAsset.clothes[clothes],
     emo: characterAsset.emo[emo],
-    acc: acc ? characterAsset.acc[acc] : null,
+    acc: character === "st" ? characterAsset.acc["glasses"] : null,
   };
 
   return (

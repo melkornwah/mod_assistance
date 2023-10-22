@@ -24,7 +24,7 @@ const SpriteOutput = (props) => {
 
   const setFormattedSpriteCode = () => {
     const spriteCode = `blpi_${char} ${body.slice(-1)} ${clothes} ${emo}`;
-    const formattedCode = getSpriteCode(`${spriteCode}${char === "sk" ? " glasses" : ""}`);
+    const formattedCode = getSpriteCode(`${spriteCode}${char === "st" ? " glasses" : ""}`);
 
     setSpriteCode(formattedCode);
   };

@@ -18,31 +18,31 @@ const min = {
         surprise: `${normalSpritesPath}/min/1/emo/surprise.png`,
       },
     },
-    body_4: {
-      body: `${normalSpritesPath}/min/4/body.png`,
+    body_2: {
+      body: `${normalSpritesPath}/min/2/body.png`,
       clothes: {
-        pioneer: `${normalSpritesPath}/min/4/clothes/pioneer.png`,
+        casual: `${normalSpritesPath}/min/2/clothes/casual.png`,
+        pioneer: `${normalSpritesPath}/min/2/clothes/pioneer.png`,
       },
       emo: {
-        angry: `${normalSpritesPath}/min/4/emo/angry.png`,
-        normal: `${normalSpritesPath}/min/4/emo/normal.png`,
-        rage: `${normalSpritesPath}/min/4/emo/rage.png`,
-        serious: `${normalSpritesPath}/min/4/emo/serious.png`,
-        upset: `${normalSpritesPath}/min/4/emo/upset.png`,
+        cry_smile: `${normalSpritesPath}/min/2/emo/cry_smile.png`,
+        grin: `${normalSpritesPath}/min/2/emo/grin.png`,
+        happy: `${normalSpritesPath}/min/2/emo/happy.png`,
+        sad: `${normalSpritesPath}/min/2/emo/sad.png`,
+        smile: `${normalSpritesPath}/min/2/emo/smile.png`,
       },
     },
-    body_5: {
-      body: `${normalSpritesPath}/min/5/body.png`,
+    body_3: {
+      body: `${normalSpritesPath}/min/3/body.png`,
       clothes: {
-        casual: `${normalSpritesPath}/min/5/clothes/casual.png`,
-        pioneer: `${normalSpritesPath}/min/5/clothes/pioneer.png`,
+        pioneer: `${normalSpritesPath}/min/3/clothes/pioneer.png`,
       },
       emo: {
-        cry_smile: `${normalSpritesPath}/min/5/emo/cry_smile.png`,
-        grin: `${normalSpritesPath}/min/5/emo/grin.png`,
-        happy: `${normalSpritesPath}/min/5/emo/happy.png`,
-        sad: `${normalSpritesPath}/min/5/emo/sad.png`,
-        smile: `${normalSpritesPath}/min/5/emo/smile.png`,
+        angry: `${normalSpritesPath}/min/3/emo/angry.png`,
+        normal: `${normalSpritesPath}/min/3/emo/normal.png`,
+        rage: `${normalSpritesPath}/min/3/emo/rage.png`,
+        serious: `${normalSpritesPath}/min/3/emo/serious.png`,
+        upset: `${normalSpritesPath}/min/3/emo/upset.png`,
       },
     },
   },
