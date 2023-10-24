@@ -2,6 +2,28 @@ import { normalSpritesPath } from "../pathConstants";
 
 const dvn = {
   normal: {
+    body_1: {
+      body: `${normalSpritesPath}/dvn/1/body.png`,
+      clothes: {
+        coat: `${normalSpritesPath}/dvn/1/clothes/coat.png`,
+        pioneer: `${normalSpritesPath}/dvn/1/clothes/pioneer.png`,
+      },
+      emo: {
+        cry: `${normalSpritesPath}/dvn/1/emo/cry.png`,
+        scared: `${normalSpritesPath}/dvn/1/emo/scared.png`,
+        shocked: `${normalSpritesPath}/dvn/1/emo/shocked.png`,
+        surprise: `${normalSpritesPath}/dvn/1/emo/surprise.png`,
+      },
+    },
+    body_2: {
+      body: `${normalSpritesPath}/dvn/2/body.png`,
+      clothes: {
+        pioneer: `${normalSpritesPath}/dvn/2/clothes/pioneer.png`,
+      },
+      emo: {
+        grin: `${normalSpritesPath}/dvn/2/emo/grin.png`,
+      },
+    },
     body_3: {
       body: `${normalSpritesPath}/dvn/3/body.png`,
       clothes: {
